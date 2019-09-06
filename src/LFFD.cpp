@@ -242,8 +242,8 @@ void LFFD::nms(std::vector<FaceInfo>& input, std::vector<FaceInfo>& output, floa
 			float inner_x0 = input[i].x1 > input[j].x1 ? input[i].x1 : input[j].x1;//std::max(input[i].x1, input[j].x1);
 			float inner_y0 = input[i].y1 > input[j].y1 ? input[i].y1 : input[j].y1;
 
-			float inner_x1 = input[i].x2 > input[j].x2 ? input[i].x2 : input[j].x2;
-			float inner_y1 = input[i].y2 > input[j].y2 ? input[i].y2 : input[j].y2;
+			float inner_x1 = input[i].x2 < input[j].x2 ? input[i].x2 : input[j].x2;  //bug fixed ,sorry
+			float inner_y1 = input[i].y2 < input[j].y2 ? input[i].y2 : input[j].y2;
 
 			float inner_h = inner_y1 - inner_y0 + 1;
 			float inner_w = inner_x1 - inner_x0 + 1;
