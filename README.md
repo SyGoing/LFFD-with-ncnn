@@ -9,7 +9,7 @@
 ## TODO(you can refer this implementation to do more)
  - [x] MNN demo finished
  - [x] openvino demo: mxnet model-->onnx-->openvino
- - [ ] openvino demo: mxnet model-->onnx-->openvino TensorRT demo: mmxnet model --> onnx-->trt engine
+ - [ ] TensorRT demo: mmxnet model --> onnx-->trt engine
 
   
   
