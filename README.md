@@ -6,6 +6,8 @@
   
   official github: [LFFD](https://github.com/YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices)
   
+  My MNN implementation [MNN](https://github.com/SyGoing/LFFD-MNN)
+  
 ## TODO(you can refer this implementation to do more)
  - [x] MNN demo finished
  - [x] openvino demo: mxnet model-->onnx-->openvino
