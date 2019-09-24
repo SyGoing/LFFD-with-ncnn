@@ -6,7 +6,8 @@
   
   official github: [LFFD](https://github.com/YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices)
   
-  My MNN implementation [MNN](https://github.com/SyGoing/LFFD-MNN)
+  My MNN implementation [MNN](https://github.com/SyGoing/LFFD-MNN).
+  
   My OpenVINO [implementation](https://github.com/SyGoing/LFFD-OpenVINO)
 ## some tips
  * You can set the input tensor shape smaller ,since you need to reduce the memory and accelerate the inference.
