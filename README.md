@@ -29,11 +29,7 @@ you can convert to your own model to onnx , and do more things.
 	  
   * Next,in this path , by doing "python symbol_10_320_20L_5scales_v2.py	",generate the symbol.json. symbol_10_560_25L_8scales_v1.py do the same thing .
   
-  * To generate onnx model, cd your_path\A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\deploy_tensorrt
-    python to_onnx.py 
-	by doing this, you can find the generated onnx model in your_path\A-Light-and-Fast-Face-Detector-for-Edge-Devices\face_detection\deploy_tensorrt\onnx_files
-	
-  * In the last, you can use the MNN's MNNConvert to convert the model. have fun!
+
 ## TODO(you can refer this implementation to do more)
  - [x] MNN demo finished
  - [x] openvino demo: mxnet model-->onnx-->openvino
