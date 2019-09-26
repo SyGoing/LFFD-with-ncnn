@@ -16,7 +16,7 @@
 
 ## how to convert the original model to ncnn
   The original mxnet model has merged the preporcess(means and norms) and the detection output tensor has been sliced with the mxnet slice op in the symbol ,which caused convert failure.
-so,you need to remove these ops ,in that way you can convert the model to onnx successfully.I will show you how to do that step by step, so when you train the model by yourself,
+so,you need to remove these ops ,in that way you can convert the model to onnx/ncnn successfully.I will show you how to do that step by step, so when you train the model by yourself,
 you can convert to your own model to onnx , and do more things.
 
   * First ,follow the author's original  github to build the devolopment environment.
@@ -33,7 +33,7 @@ you can convert to your own model to onnx , and do more things.
 ## TODO(you can refer this implementation to do more)
  - [x] MNN demo finished
  - [x] openvino demo: mxnet model-->onnx-->openvino
- - [x] TensorRT demo: mxnet model --> onnx-->trt engine
+ - [x] TensorRT demo: mxnet model --> onnx-->trt engine(coming soon)
 
   
   
