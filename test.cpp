@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 	std::vector<FaceInfo> face_info;
 
 	ncnn::Mat inmat = ncnn::Mat::from_pixels(frame.data, ncnn::Mat::PIXEL_BGR, frame.cols, frame.rows);
-	lffd.detect(inmat, face_info, 320, 240);
+	lffd.detect(inmat, face_info, 240, 320);
 
 	for (int i = 0; i < face_info.size(); i++)
 	{
