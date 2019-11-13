@@ -265,12 +265,7 @@ void LFFD::nms(std::vector<FaceInfo>& input, std::vector<FaceInfo>& output, floa
 
 			float area1 = h1 * w1;
 
-			float score;
-
-			if(type==NMS_UNION)
-				score = inner_area / (area0 + area1 - inner_area);
-			else
-				score = inner_area / (area0 <area1? area0:area1);
+			float score= inner_area/area1;
 
 			if (score > threshold)
 				merged[j] = 1;
