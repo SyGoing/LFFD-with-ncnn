@@ -242,10 +242,10 @@ void LFFD::nms(std::vector<FaceInfo>& input, std::vector<FaceInfo>& output, floa
 		nPick += 1;
 		for (std::multimap<float, int>::iterator it = vScores.begin(); it != vScores.end();) {
 			int it_idx = it->second;
-			maxX = max(input.at(it_idx).x1, input.at(last).x1);
-			maxY = max(input.at(it_idx).y1, input.at(last).y1);
-			minX = min(input.at(it_idx).x2, input.at(last).x2);
-			minY = min(input.at(it_idx).y2, input.at(last).y2);
+			maxX = std::max(input.at(it_idx).x1, input.at(last).x1);
+			maxY = std::max(input.at(it_idx).y1, input.at(last).y1);
+			minX = std::min(input.at(it_idx).x2, input.at(last).x2);
+			minY = std::min(input.at(it_idx).y2, input.at(last).y2);
 			//maxX1 and maxY1 reuse 
 			maxX = ((minX - maxX + 1) > 0) ? (minX - maxX + 1) : 0;
 			maxY = ((minY - maxY + 1) > 0) ? (minY - maxY + 1) : 0;
