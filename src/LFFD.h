@@ -34,7 +34,7 @@ private:
 		int fea_w, int fea_h, int cols, int rows, int scale_id);
 	void get_topk_bbox(std::vector<FaceInfo>& input, std::vector<FaceInfo>& output, int topk);
 	void nms(std::vector<FaceInfo>& input, std::vector<FaceInfo>& output,
-		float threshold, int type = NMS_UNION);
+		float threshold, int type = NMS_MIN);
 private:
 	ncnn::Net lffd;
 
