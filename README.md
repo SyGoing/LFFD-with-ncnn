@@ -1,4 +1,4 @@
-## the C++ implemententation of LFFD with ncnn 
+## the C++ implemententation of LFFD with NCNN modify
   I have implemented the LFFD  referring to the official python implementation
   the Inference time of LFFD with the input shape of 320x240 is about 20ms on the Qualcomm Snapdragon 632 CPU
   
